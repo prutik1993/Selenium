@@ -17,7 +17,15 @@ public class Practice {
             if(driver.getCurrentUrl().equals("https://www.facebook.com/")) System.out.println("URL validation PASSED");
             else System.out.println("URL validation FAILED");
 
-            WebElement logo = driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']"));
+//            WebElement logo = driver.findElement(By.cssSelector("img[class='fb_logo _8ilh img']")); // if there a space it means here more classNames
+//            if(logo.isDisplayed()) System.out.println("Logo validation PASSED");
+//            else System.out.println("URL validation FAILED");
+
+//            WebElement logo = driver.findElement(By.className("fb_logo"));
+//            if(logo.isDisplayed()) System.out.println("Logo validation PASSED");
+//            else System.out.println("URL validation FAILED");
+
+            WebElement logo = driver.findElement(By.xpath("//img[contains(@class, '_8ilh')]"));
             if(logo.isDisplayed()) System.out.println("Logo validation PASSED");
             else System.out.println("URL validation FAILED");
 
@@ -33,7 +41,7 @@ public class Practice {
             if(password.isDisplayed()) System.out.println("Password validation PASSED");
             else System.out.println("Password Box validation FAILED");
 
-            WebElement logInButton = driver.findElement(By.name("login"));
+            WebElement logInButton = driver.findElement(By.name("login")); // //button[contains(@class,'what contains')]
             if(logInButton.isDisplayed()) System.out.println("Log In Button validation PASSED");
             else System.out.println("Log In Button validation FAILED");
 
@@ -44,7 +52,8 @@ public class Practice {
             if(forgotPassword.isDisplayed()) System.out.println("Forgot Password Link validation PASSED");
             else System.out.println("Forgot Password Link validation FAILED");
 
-            WebElement createNewAccount = driver.findElement(By.cssSelector("a[class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']"));
+            WebElement createNewAccount = driver.findElement(By.cssSelector
+                    ("a[class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']"));
             if(createNewAccount.isDisplayed()) System.out.println("Create New Account validation PASSED");
             else System.out.println("Create New Account validation FAILED");
         }catch(Exception e){
