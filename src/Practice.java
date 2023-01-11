@@ -37,6 +37,9 @@ public class Practice {
             if(logInButton.isDisplayed()) System.out.println("Log In Button validation PASSED");
             else System.out.println("Log In Button validation FAILED");
 
+            if(logInButton.isEnabled()) System.out.println("Log In Button validation PASSED");
+            else System.out.println("Log In Button validation FAILED");
+
             WebElement forgotPassword = driver.findElement(By.partialLinkText("Forgot"));
             if(forgotPassword.isDisplayed()) System.out.println("Forgot Password Link validation PASSED");
             else System.out.println("Forgot Password Link validation FAILED");

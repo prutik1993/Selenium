@@ -35,14 +35,15 @@ public class _02_Recap_Validate_Google {
         WebElement searchButton = driver.findElement(By.name("btnK"));
 
         searchInput.sendKeys("Software Engineer in Test");
-
-//        System.out.println(
-//                driver.findElement(
-//                        By.xpath(
-//                                "(//div[@class='yuRUbf'])[2]")).getText().contains("Software Engineer in Test")
-//                        ? "Validation PASSED" : "Validation FAILED");
-
         searchButton.click();
+
+        System.out.println(driver.findElement(By.xpath("(//div[@class='yuRUbf'])[1]")).getText().contains("Software Engineer in Test")
+                        ? "Validation PASSED" : "Validation FAILED");
+
+
+//        if(driver.findElement(By.xpath("(//div[@class='yuRUbf'])[1]")).getText().contains("Software Engineer in Test"))
+//            System.out.println("PASSED");
+//        else System.out.println("FAILED");
 
 
 

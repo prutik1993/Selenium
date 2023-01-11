@@ -1,8 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
-public class PracticeForMe {
+public class PracticeForMe_01 {
     public static void main(String[] args) {
         /*
                 WebDriver methods
