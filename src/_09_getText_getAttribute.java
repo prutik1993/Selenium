@@ -39,21 +39,22 @@ public class _09_getText_getAttribute {
         System.out.println(text.getText());
 
         System.out.println(firstName.isDisplayed() ? "PASSED" : "FAILED");
-        System.out.println(firstName.getAttribute("placeholder"));
+        //System.out.println(firstName.getAttribute("placeholder"));
         firstName.sendKeys("John");
-        Waiter.pause(2);
+        System.out.println(firstName.getAttribute("value"));
+
 
         System.out.println(lastName.isDisplayed() ? "PASSED" : "FAILED");
-        System.out.println(lastName.getAttribute("placeholder"));
+        //System.out.println(lastName.getAttribute("placeholder"));
         lastName.sendKeys("Doe");
-        Waiter.pause(2);
+        System.out.println(lastName.getAttribute("value"));
+
 
         System.out.println(email.isDisplayed() ? "PASSED" : "FAILED");
-        System.out.println(email.getAttribute("placeholder"));
+       // System.out.println(email.getAttribute("placeholder"));
         email.sendKeys("johndoe@gmail.com");
-        Waiter.pause(2);
+        System.out.println(email.getAttribute("value"));
 
-        subscribeButton.click();
 
         System.out.println(subscribeButton.isDisplayed() ? "PASSED" : "FAILED");
         System.out.println(subscribeButton.isEnabled() ? "PASSED" : "FAILED");
