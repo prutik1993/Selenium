@@ -11,7 +11,7 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if(driver == null){
-            System.setProperty("webdriver.chrome.driver", // this line sets the driver to Java system
+            System.setProperty("webdriver.chrome.driver", // sets the driver to Java system
                     "/Users/anastasiyaprudnikova/IdeaProjects/initial_selenium_project_5/chromedriver"); // location on your desktop
             driver = new ChromeDriver();
             driver.manage().window().maximize();
