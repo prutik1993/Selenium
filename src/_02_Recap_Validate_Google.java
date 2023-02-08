@@ -45,11 +45,6 @@ public class _02_Recap_Validate_Google {
 //            System.out.println("PASSED");
 //        else System.out.println("FAILED");
 
-
-
-
-
-
         driver.quit();
     }
 }

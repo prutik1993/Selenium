@@ -1,5 +1,7 @@
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class PracticeForMe_01 {
     public static void main(String[] args) {
@@ -26,7 +28,8 @@ public class PracticeForMe_01 {
 
         driver.manage().window().maximize(); // opens the whole screen in webdriver The browser's menu bar is visible
         //driver.manage().window().fullscreen(); // opens the whole screen in webdriver The browser's menu bar is not visible
-        driver.navigate().refresh();
+        //driver.navigate().refresh();
+
         driver.navigate().to("https://www.youtube.com/");
         driver.navigate().back();
         driver.navigate().forward();

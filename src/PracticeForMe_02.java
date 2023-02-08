@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import utils.Driver;
 import utils.GetGoogle;
 
@@ -13,6 +12,7 @@ public class PracticeForMe_02 {
         WebDriver driver = Driver.getDriver();
 
         GetGoogle.getGoogle();
+
 
 
 
@@ -40,4 +40,6 @@ public class PracticeForMe_02 {
 
         Driver.quitDriver();
     }
+
+
 }
